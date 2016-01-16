@@ -1,7 +1,7 @@
 # Ejercicio Final
 ## Repositorio dedicado al trabajo final del curso LaTeX y Git por Darwin Eventur.
-
 Dicho ejercicio debe contener:
+
 	* Tablas
 	* Listas
 	* Gráficas
