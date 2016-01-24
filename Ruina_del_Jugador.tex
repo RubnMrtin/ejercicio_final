@@ -11,9 +11,10 @@
 \begin{document}
 \maketitle
 
-\begin{abstract}
-Imaginemos la siguiente situación: Un jugador tiene un capital de 20 euros y cada instante de tiempo apuesta un euro al lanzamiento de una moneda, ganando un euro si sale cara y perdiendo el euro apostado si sale cruz. Consideramos la variable aleatoria discreta T que nos indica el instante de tiempo en que el jugador se arruina por primera vez. Deberemos por tanto crear una función en R que permita simular y representar gráficamente la ``ruina del jugador'' y presentar el desarrollo mediante un documento de LaTeX\cite{LaTeX}
+
+\begin{abstract}Imaginemos la siguiente situación: Un jugador tiene un capital de 20 euros y cada instante de tiempo apuesta un euro al lanzamiento de una moneda, ganando un euro si sale cara y perdiendo el euro apostado si sale cruz. Consideramos la variable aleatoria discreta T que nos indica el instante de tiempo en que el jugador se arruina por primera vez. Deberemos por tanto crear una función en R que permita simular y representar gráficamente la ``ruina del jugador'' y presentar el desarrollo mediante un documento de LaTeX\cite{LaTeX}
 \end{abstract}
+
 
 \tableofcontents
 
@@ -27,7 +28,7 @@ Por tanto los lanzamientos consecutivos de la moneda se distribuirán según una
 $$P[X=k]=\binom{n}{k} p^k(1-p)^{n-k}$$
 
 La esperanza de dicha variable, $E[X]=np$, nos indica que si seguimos lanzando la moneda indefinidamente ganaremos  las mismas veces que perderemos. Sin embargo tenemos la posibilidad de perder todo el dinero antes de que esto ocurra.
-\newpage
+
 \section{Qué Ocurre}
 En la tabla que se muestra a continuación se puede observar el comportamiento del capital del jugador una vez que comienza a jugar.
 
@@ -180,10 +181,7 @@ ruinaDelJugador = function(capitalInicial)
 }
 \end{verbatim}
 
-\bibliographystyle{acm}
-\bibliography{ruina}
 \subsection{Ejemplos}
-
 \begin{verbatim}
 > ruinaDelJugador(20)
 [1] "El jugador se arruina en el momento: "
@@ -193,7 +191,6 @@ ruinaDelJugador = function(capitalInicial)
 \includegraphics[scale=0.35]{Jugador20_1.png} 
 \end{center}
 
-
 \begin{verbatim}
 > ruinaDelJugador(10)
 [1] "El jugador se arruina en el momento: "
@@ -202,5 +199,10 @@ ruinaDelJugador = function(capitalInicial)
 \begin{center}
 \includegraphics[scale=0.35]{Jugador10_1.png} 
 \end{center}
+
+\newpage
+\bibliographystyle{acm}
+\bibliography{ruina}
+
 
 \end{document}
