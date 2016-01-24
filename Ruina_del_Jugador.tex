@@ -12,7 +12,7 @@
 \maketitle
 
 \begin{abstract}
-Imaginemos la siguiente situación: Un jugador tiene un capital de 20 euros y cada instante de tiempo apuesta un euro al lanzamiento de una moneda, ganando un euro si sale cara y perdiendo el euro apostado si sale cruz. Consideramos la variable aleatoria discreta T que nos indica el instante de tiempo en que el jugador se arruina por primera vez. Deberemos por tanto crear una función en R que permita simular y representar gráficamente la "ruina del jugador" y presentar el desarrollo mediante un documento de LaTeX\cite{LaTeX}
+Imaginemos la siguiente situación: Un jugador tiene un capital de 20 euros y cada instante de tiempo apuesta un euro al lanzamiento de una moneda, ganando un euro si sale cara y perdiendo el euro apostado si sale cruz. Consideramos la variable aleatoria discreta T que nos indica el instante de tiempo en que el jugador se arruina por primera vez. Deberemos por tanto crear una función en R que permita simular y representar gráficamente la ``ruina del jugador'' y presentar el desarrollo mediante un documento de LaTeX\cite{LaTeX}
 \end{abstract}
 
 \tableofcontents
@@ -46,7 +46,7 @@ $\vdots$ & $\vdots$ & $\vdots$\\
 20 & 20 & 40\\
 \end{tabular}
 \end{center}
-Así, si el jugador tiene la "mala suerte" de perder todos los lanzamientos se quedaría sin dinero en el instante 20. Sin embargo, si en ese mismo momento hubiese ganado todos los lanzamientos el jugador tendría 40 euros en su poder.
+Así, si el jugador tiene la ``mala suerte'' de perder todos los lanzamientos se quedaría sin dinero en el instante 20. Sin embargo, si en ese mismo momento hubiese ganado todos los lanzamientos el jugador tendría 40 euros en su poder.
 \newpage
 \section{El Problema}
 \subsection{Planteamiento}
@@ -68,7 +68,7 @@ Para la creación de la moneda usaremos la función ya implementa en R {\tt samp
 moneda = sample(c(1,-1), 1, prob = c(0.5, 0.5))
 \end{verbatim}
 
-Tenemos pues un "lanzamiento" con un vector de valores (1,-1) para cara y cruz respectivamente. Ambas posibilidades tienen una probabilidad de ocurrir del 50\%, tal y como se observa en el último argumento.
+Tenemos pues un ``lanzamiento'' con un vector de valores (1,-1) para cara y cruz respectivamente. Ambas posibilidades tienen una probabilidad de ocurrir del 50\%, tal y como se observa en el último argumento.
 
 \subsection{Creación del Bucle Principal}
 Una vez que tenemos la moneda pasaremos a esbozar qué es necesario en el interior de la función. Se puede suponer leyendo el enunciado del problema que el jugador sigue realizando lanzamientos de moneda hasta que se queda sin dinero, por lo que nos hace falta un bucle que repita esos lanzamientos hasta que no tenga con qué jugar.
@@ -156,7 +156,6 @@ Del mismo modo añadimos un mensaje que indique en qué momento exacto el jugado
 print("El jugador se arruina en el momento: ");
 print(length(resultados));
 \end{verbatim}
-
 \subsection{Conclusiones}
 Para terminar uniremos todo el código utilizado y añadiremos un par de ejemplos con sus respectivas gráficas:
 
